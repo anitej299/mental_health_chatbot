@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab, #1f4037, #99f2c8);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo with glow & hover pulse */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 20px rgba(97, 218, 251, 0.7));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.App-logo:hover {
+  transform: scale(1.1) rotate(10deg);
+  filter: drop-shadow(0 0 40px rgba(97, 218, 251, 1));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 12s linear;
+  }
+}
+
+.App-header {
+  background: rgba(40, 44, 52, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.App-link {
+  color: #61dafb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 15px #61dafb;
+  transform: scale(1.1);
+}
+
+/* Logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Background gradient animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

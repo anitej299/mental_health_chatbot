@@ -1,0 +1,53 @@
+/* Import a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Cool animated gradient background */
+  background: linear-gradient(135deg, #1f1c2c, #928dab, #1f4037, #99f2c8);
+  background-size: 400% 400%;
+  animation: gradientBG 18s ease infinite;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make code blocks look futuristic */
+code {
+  font-family: 'Fira Code', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.3rem 0.6rem;
+  color: #61dafb;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Background gradient animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating animation for code blocks */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
